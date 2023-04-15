@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #e5e5e5;
+}
+
+.container {
+    display: flex;
+}
+
+.navbar {
+    position: fixed;
+    width: 70px;
+    height: 100vh;
+    background-color: #0d28a6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar .logoNavbar {
+    padding: 18px;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 13px;
+}
+
+.navbar ul li p {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #fff;
+}
+
+.navbar ul .liSelected {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.navbar ul .liSelected p {
+    font-weight: 700;
+}
+
+.containerContent {
+    width: 100%;
+}
+
+.containerContent .header {
+    position: fixed;
+    height: 70px;
+    width: calc(100% - 70px);
+    margin-left: 70px;
+    background-color: #fff;
+    border-bottom: 0.5px solid #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerContent .header .headerLeft {
+    display: flex;
+    align-items: center;
+}
+
+.containerContent .header .headerLeft .logoHeader {
+    padding: 24px 18px;
+    margin-right: 123px;
+}
+
+.containerContent .header .headerRight form {
+    display: flex;
+    align-items: center;
+    margin-right: 37px;
+}
+
+.containerContent .header .headerRight form input {
+    width: 174px;
+    height: 36px;
+    padding: 9px 12px;
+    border: 1px solid #d0d0d0;
+    border-radius: 2px;
+    outline: none;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #8a8a8a;
+}
+
+.containerContent .header .headerRight {
+    display: flex;
+    align-items: center;
+}
+
+.containerContent .header .headerRight form a {
+    text-decoration: none;
+}
+
+.containerContent .header .headerRight form a button {
+    width: 70px;
+    height: 36px;
+    padding: 8px 12px;
+    background: #fff;
+    border: 1px solid #0d28a6;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0d28a6;
+}
+
+.containerContent .header .headerRight .userInfo {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.subContainerContent .sidebar {
+    position: fixed;
+    background-color: #fff;
+    width: 220px;
+    height: 100vh;
+    margin-left: 70px;
+}
+
+.subContainerContent .sidebar ul {
+    padding-top: 24px;
+}
+
+.subContainerContent .sidebar ul li {
+    list-style: none;
+    padding: 11px 24px;
+    margin-bottom: 14px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #8a8a8a;
+}
+
+.subContainerContent .sidebar ul .liSelected {
+    background: #cfd4ed;
+    color: black;
+}
+
+.mainContent {
+    width: calc(100% - 290px);
+    margin-top: 70px;
+    margin-left: 290px;
+    padding: 32px 25px;
+}
+
+.mainContent .breadcrumb a,
+.mainContent .titleContent a,
+.mainContent .buttonSizeCar a {
+    text-decoration: none;
+}
+
+.breadcrumb {
+    margin-bottom: 30px;
+}
+
+.mainContent .breadcrumb a {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #222;
+}
+
+.mainContent .breadcrumb .breadcrumbSelected {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000;
+}
+
+.mainContent .titleContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.mainContent .titleContent h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+}
+
+.mainContent .titleContent a button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 36px;
+    padding: 8px 12px;
+    background-color: #0d28a6;
+    border: 1px solid #0d28a6;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.mainContent .titleContent a button img {
+    margin-right: 8px;
+}
+
+.mainContent .buttonSizeCar {
+    margin-bottom: 24px;
+}
+
+.mainContent .buttonSizeCar a button {
+    padding: 8px 12px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    border: 1px solid #aeb7e1;
+    border-radius: 2px;
+    color: #aeb7e1;
+    background-color: #fff;
+}
+
+.mainContent .cardCar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.mainContent .cardCar .card {
+    width: 351px;
+    height: 446px;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 40px;
+}
+
+.mainContent .cardCar .card .cardImg {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.mainContent .cardCar .card .cardImg img {
+    height: 222px;
+    width: 303px;
+    border-radius: 8px;
+}
+
+.mainContent .cardCar .card .typeCar {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.mainContent .cardCar .card .priceCar {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.mainContent .cardCar .card .updatedAt {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.mainContent .cardCar .card .updatedAt p {
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6a6a6a;
+}
+
+.mainContent .cardCar .card .updatedAt img,
+.mainContent .cardCar .card .editDelete .delete a button img,
+.mainContent .cardCar .card .editDelete .edit a button img {
+    width: 20px;
+    height: 20px;
+}
+
+.mainContent .cardCar .card .updatedAt img {
+    margin-right: 10px;
+}
+
+.mainContent .cardCar .card .editDelete {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainContent .cardCar .card .editDelete .delete a button,
+.mainContent .cardCar .card .editDelete .edit a button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 133px;
+    height: 48px;
+    outline: none;
+}
+
+.mainContent .cardCar .card .editDelete .delete a button img,
+.mainContent .cardCar .card .editDelete .edit a button img {
+    margin-right: 14px;
+}
+
+.mainContent .cardCar .card .editDelete .delete a button {
+    background-color: #fff;
+    border: 1px solid #fa2c5a;
+}
+
+.mainContent .cardCar .card .editDelete .edit a button {
+    background-color: #5cb85f;
+    border: 1px solid #5cb85f;
+}
+
+.mainContent .cardCar .card .editDelete .delete a,
+.mainContent .cardCar .card .editDelete .edit a {
+    text-decoration: none;
+}
+
+.mainContent .cardCar .card .editDelete .delete a button p {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fa2c5a;
+}
+
+.mainContent .cardCar .card .editDelete .edit a button p {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+}

@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #e5e5e5;
+}
+
+.container {
+    display: flex;
+}
+
+.navbar {
+    position: fixed;
+    width: 70px;
+    height: 100vh;
+    background-color: #0d28a6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar .logoNavbar {
+    padding: 18px;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 13px;
+}
+
+.navbar ul li p {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #fff;
+}
+
+.navbar ul .liSelected {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.navbar ul .liSelected p {
+    font-weight: 700;
+}
+
+.containerContent {
+    width: 100%;
+}
+
+.containerContent .header {
+    position: fixed;
+    height: 70px;
+    width: calc(100% - 70px);
+    margin-left: 70px;
+    background-color: #fff;
+    border-bottom: 0.5px solid #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerContent .header .headerLeft {
+    display: flex;
+    align-items: center;
+}
+
+.containerContent .header .headerLeft .logoHeader {
+    padding: 24px 18px;
+    margin-right: 123px;
+}
+
+.containerContent .header .headerRight form {
+    display: flex;
+    align-items: center;
+    margin-right: 37px;
+}
+
+.containerContent .header .headerRight form input {
+    width: 174px;
+    height: 36px;
+    padding: 9px 12px;
+    border: 1px solid #d0d0d0;
+    border-radius: 2px;
+    outline: none;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #8a8a8a;
+}
+
+.containerContent .header .headerRight {
+    display: flex;
+    align-items: center;
+}
+
+.containerContent .header .headerRight form a {
+    text-decoration: none;
+}
+
+.containerContent .header .headerRight form a button {
+    width: 70px;
+    height: 36px;
+    padding: 8px 12px;
+    background: #fff;
+    border: 1px solid #0d28a6;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0d28a6;
+}
+
+.containerContent .header .headerRight .userInfo {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.subContainerContent .sidebar {
+    position: fixed;
+    background-color: #fff;
+    width: 220px;
+    height: 100vh;
+    margin-left: 70px;
+}
+
+.subContainerContent .sidebar ul {
+    padding-top: 24px;
+}
+
+.subContainerContent .sidebar ul li {
+    list-style: none;
+    padding: 11px 24px;
+    margin-bottom: 14px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #8a8a8a;
+}
+
+.subContainerContent .sidebar ul .liSelected {
+    background: #cfd4ed;
+    color: black;
+}
+
+.mainContent {
+    width: calc(100% - 290px);
+    margin-top: 70px;
+    margin-left: 290px;
+    padding: 32px 25px;
+}
+
+.mainContent .breadcrumb a,
+.mainContent .titleContent a,
+.mainContent .buttonSizeCar a {
+    text-decoration: none;
+}
+
+.breadcrumb {
+    margin-bottom: 30px;
+}
+
+.mainContent .breadcrumb a {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #222;
+}
+
+.mainContent .breadcrumb .breadcrumbSelected {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000;
+}
+
+.mainContent .titleContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.mainContent .titleContent h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+}
+
+.mainContent .addNewCar {
+    background-color: #fff;
+    padding: 16px;
+}
+
+.mainContent .addNewCar form .form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.mainContent .addNewCar form .form .label {
+    width: 147px;
+    height: 18px;
+}
+
+.mainContent .addNewCar form .form .label label {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #3c3c3c;
+}
+
+.mainContent .addNewCar form .form .label label span {
+    color: #ff0000;
+}
+
+.mainContent .addNewCar form .form .input input {
+    padding: 9px 12px;
+    width: 339px;
+    height: 36px;
+    border: 1px solid #d0d0d0;
+    border-radius: 2px;
+    outline: none;
+}
+
+.mainContent .addNewCar form .buttonReset {
+    padding: 8px 12px;
+    background-color: #fff;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0d28a6;
+    border: 1px solid #0d28a6;
+    margin-right: 17px;
+}
+
+.mainContent .addNewCar form a {
+    text-decoration: none;
+}
+
+.mainContent .addNewCar form a .buttonCancel {
+    padding: 8px 12px;
+    background-color: #fff;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0d28a6;
+    border: 1px solid #0d28a6;
+    margin-right: 17px;
+}
+
+.mainContent .addNewCar form .buttonAdd {
+    padding: 8px 12px;
+    background-color: #0d28a6;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    border: 1px solid #0d28a6;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Edit Car</title>
+        <link rel="stylesheet" href="/css/addCar.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logoNavbar">
+                    <img src="/img/logoNavbar.png" alt="" />
+                </div>
+                <ul>
+                    <li>
+                        <img src="/img/logoHome.png" alt="" />
+                        <p>Dashbord</p>
+                    </li>
+                    <li class="liSelected">
+                        <img src="/img/logoTruck.png" alt="" />
+                        <p>Cars</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="containerContent">
+                <div class="header">
+                    <div class="headerLeft">
+                        <div class="logoHeader">
+                            <img src="/img/logoHeader.png" alt="" />
+                        </div>
+                        <div class="logoSidebar">
+                            <img src="/img/logoSidebar.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="headerRight">
+                        <form action="" method="">
+                            <input type="text" value="" placeholder="Search" />
+                            <a href="">
+                                <button type="submit">Search</button>
+                            </a>
+                        </form>
+                        <div class="userInfo">
+                            <div class="userImg">
+                                <img src="/img/logoU.png" alt="" />
+                            </div>
+                            <p>Unis Badri</p>
+                            <div class="arrowInfo">
+                                <img src="/img/arrowButtonUser.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subContainerContent">
+                    <div class="sidebar">
+                        <ul>
+                            <li>CARS</li>
+                            <li class="liSelected">List Cars</li>
+                        </ul>
+                    </div>
+                    <div class="mainContent">
+                        <div class="breadcrumb">
+                            <a href="" class="breadcrumbSelected">Cars ></a>
+                            <a href="/" class="breadcrumbSelected">List Cars ></a>
+                            <a href="">Update Car Information</a>
+                        </div>
+                        <div class="titleContent">
+                            <h2>Add New Car</h2>
+                        </div>
+                        <div class="addNewCar">
+                            <form action="/mobils/edit/<%=productDetail.id %>" method="POST">
+                                <div class="form">
+                                    <div class="label">
+                                        <label for="">Nama<span>*</span></label>
+                                    </div>
+                                    <div class="input">
+                                        <input type="text" placeholder="Avanza" name="nama" value="<%=productDetail.nama %>" />
+                                    </div>
+                                </div>
+                                <div class="form">
+                                    <div class="label">
+                                        <label for="">Sewa Per Hari<span>*</span></label>
+                                    </div>
+                                    <div class="input">
+                                        <input type="text" placeholder="Rp 0-" name="harga" value="<%=productDetail.harga %>" />
+                                    </div>
+                                </div>
+                                <div class="form">
+                                    <div class="label">
+                                        <label for="">Ukuran<span>*</span></label>
+                                    </div>
+                                    <div class="input">
+                                        <input type="text" placeholder="Small" name="ukuran" value="<%=productDetail.ukuran %>" />
+                                    </div>
+                                </div>
+                                <a href="">
+                                    <button type="" class="buttonCancel">Cancel</button>
+                                </a>
+                                <button type="submit" class="buttonAdd">Save</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>List Car</title>
+        <link rel="stylesheet" href="/css/index.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logoNavbar">
+                    <img src="/img/logoNavbar.png" alt="" />
+                </div>
+                <ul>
+                    <li>
+                        <img src="/img/logoHome.png" alt="" />
+                        <p>Dashbord</p>
+                    </li>
+                    <li class="liSelected">
+                        <img src="/img/logoTruck.png" alt="" />
+                        <p>Cars</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="containerContent">
+                <div class="header">
+                    <div class="headerLeft">
+                        <div class="logoHeader">
+                            <img src="/img/logoHeader.png" alt="" />
+                        </div>
+                        <div class="logoSidebar">
+                            <img src="/img/logoSidebar.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="headerRight">
+                        <form action="" method="">
+                            <input type="text" value="" placeholder="Search" />
+                            <a href="">
+                                <button type="submit">Search</button>
+                            </a>
+                        </form>
+                        <div class="userInfo">
+                            <div class="userImg">
+                                <img src="/img/logoU.png" alt="" />
+                            </div>
+                            <p>Unis Badri</p>
+                            <div class="arrowInfo">
+                                <img src="/img/arrowButtonUser.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subContainerContent">
+                    <div class="sidebar">
+                        <ul>
+                            <li>CARS</li>
+                            <li class="liSelected">List Cars</li>
+                        </ul>
+                    </div>
+                    <div class="mainContent">
+                        <div class="breadcrumb">
+                            <a href="" class="breadcrumbSelected">Cars ></a>
+                            <a href="">List Cars</a>
+                        </div>
+                        <div class="titleContent">
+                            <h2>List Car</h2>
+                            <a href="/create">
+                                <button>
+                                    <img src="/img/logoTambah.png" alt="" />
+                                    <p>Add New Car</p>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="buttonSizeCar">
+                            <a href="/">
+                                <button>All</button>
+                            </a>
+                            <a href="/?filter=Small">
+                                <button>Small</button>
+                            </a>
+                            <a href="/?filter=Medium">
+                                <button>Medium</button>
+                            </a>
+                            <a href="/?filter=Large">
+                                <button>Large</button>
+                            </a>
+                        </div>
+                        <div class="cardCar">
+                            <% mobils.map((mobil) => { %>
+                            <div class="card">
+                                <div class="cardImg">
+                                    <img src="<%=mobil.gambar %>" alt="" />
+                                </div>
+                                <p class="typeCar"><%=mobil.nama %></p>
+                                <p class="priceCar">Rp <%=mobil.harga %> / hari</p>
+                                <div class="updatedAt">
+                                    <img src="/img/logoJam.png" alt="" />
+                                    <p>Updated at <%= new Date(mobil.updated_at).toLocaleString() %></p>
+                                </div>
+                                <div class="editDelete">
+                                    <div class="delete">
+                                        <a href="/delete/<%=mobil.id %>">
+                                            <button>
+                                                <img src="/img/logoTempatSampah.png" alt="" />
+                                                <p>Delete</p>
+                                            </button>
+                                        </a>
+                                    </div>
+                                    <div class="edit">
+                                        <a href="/edit/<%=mobil.id %>">
+                                            <button>
+                                                <img src="/img/logoEdit.png" alt="" />
+                                                <p>Update</p>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <%})%>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
